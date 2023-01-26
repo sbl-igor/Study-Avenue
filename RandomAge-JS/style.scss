@@ -1,0 +1,48 @@
+@mixin flex($flex, $direction, $jus-content) {
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $jus-content;
+}
+%templateNums {
+    font-size: 30px;
+}
+
+body {
+    margin: 0 auto;
+    section {
+        margin: 40px auto;
+        @include flex(flex, row, space-around);
+        align-items: center;
+        width: 80%;
+        height: 80vh;
+        background-color: grey;
+        border: 3px solid black;
+        border-radius: 20px;
+        padding: 30px 50px;
+        .age {
+            width: 20%; 
+            height: 20%;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            @extend %templateNums;
+            @include flex(flex, row, space-around);
+            align-items: center;            
+        }
+        .num {
+            width: 20%;
+            height: 20%;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;      
+            @extend %templateNums;
+            @include flex(flex, row, space-around);
+            align-items: center;            
+        }
+        p {
+            font-size:30px;
+            color: white;
+            text-shadow: 2px 0 2px #000, 0 2px 2px #000, -2px 0 2px #000, 0 -2px 2px #000;
+        }
+    }
+}
