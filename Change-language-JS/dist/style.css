@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .change-language {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6FA;
+  border: 2px solid grey;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+body .change-language .table-capture {
+  width: 40%;
+}
+body .change-language .table-capture ul li {
+  font-size: 25px;
+  height: 40px;
+}
+body .change-language .img-flag {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .change-language .img-flag img {
+  width: 200px;
+  height: 150px;
+  border: 3px solid grey;
+  border-radius: 20px;
+  object-fit: fill;
+}
